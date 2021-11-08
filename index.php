@@ -1,4 +1,4 @@
-<?phpphp
+<?php
 include("db.php");
 
 //EXPORT_DATABASE("localhost", "ks2", "N12345678", "takida" );
