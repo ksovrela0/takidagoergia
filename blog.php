@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 if(isset($_GET[id]))
 {
@@ -16,7 +16,7 @@ if(isset($_GET[id]))
     <meta name="description" content="">
     <meta name="author" content="">
     <title>
-      <?
+      <?php
           if(isset($_GET[id]))
           {
               echo $GetTourR[name];
@@ -28,7 +28,7 @@ if(isset($_GET[id]))
       ?>
     </title>
 
-    <?
+    <?php
         if(isset($_GET[id]))
         {
             echo '
@@ -60,11 +60,11 @@ if(isset($_GET[id]))
   <div class="loading-img"></div>
 </div>
 
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
-	<?
+	<?php
 		if(!isset($_GET[id]))
 		{
 			echo '
@@ -189,7 +189,7 @@ include("blocks/header.php");
 	?>
 	
 
-  <?
+  <?php
 	include("blocks/footer.php");
 	?>
 

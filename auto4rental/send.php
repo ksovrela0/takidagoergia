@@ -1,4 +1,4 @@
-<?
+<?php
 require '../PHPMailer/PHPMailerAutoload.php';
 						$mail = new PHPMailer;
 

@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION[a_id]))
 {
@@ -68,7 +68,7 @@ if(isset($_GET['exit']))
 						<li class="">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="https://demo.betscheme.com/theme/Admin/img/user-avatar.png" alt="" />                                <span class="username">
-                                    <?
+                                    <?php
 
 									echo $_SESSION['a_login']
 ?>									</span>
@@ -112,7 +112,7 @@ if(isset($_GET['exit']))
     <!-- END RESPONSIVE QUICK SEARCH FORM -->
     <!-- BEGIN SIDEBAR MENU -->
 
-    <?
+    <?php
 	include("assets/header.php");
 	?>
     <script type="text/javascript">
@@ -205,7 +205,7 @@ if(isset($_GET['exit']))
 									<a href="javascript:;" class="icon-chevron-down"></a>
 									</span>
                                 </div>
-								<?
+								<?php
 								/*$time = time();
 								$time = $time - 30;
 								$onlain = mysql_query("SELECT * FROM online WHERE time>$time");

@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 ?>
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ include("db.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title><?
+    <title><?php
 	if($_GET[id] == 1)
 	{
 		echo 'Паломнические туры';
@@ -72,13 +72,13 @@ include("db.php");
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
 	
 	
-	<?
+	<?php
 	if($_GET[id] == 1)
 	{
 		echo '<section class="page-img" style="background-image: url(\'back/1.jpg\');">';
@@ -110,7 +110,7 @@ include("blocks/header.php");
 	?>
 		<div class="container">
 			<div class="col-sm-8">
-				<h1 class="main-head"><?
+				<h1 class="main-head"><?php
 	if($_GET[id] == 1)
 	{
 		echo 'Паломнические туры';
@@ -145,7 +145,7 @@ include("blocks/header.php");
 			<div class="col-sm-4">
 				<ul class="breadcrumb">
 					<li><a href="#"><span class="icon-home"></span></a></li>
-					<li><a href="#"><?
+					<li><a href="#"><?php
 	if($_GET[id] == 1)
 	{
 		echo 'Паломнические туры';
@@ -188,7 +188,7 @@ include("blocks/header.php");
 
 				
 					
-					<?
+					<?php
 					if($_GET[id] == 1)
 					{
 						$GetTours = mysql_query("SELECT * FROM tours WHERE type='1' ORDER BY id DESC");
@@ -836,7 +836,7 @@ include("blocks/header.php");
 		</div>
 	</main>
 
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 

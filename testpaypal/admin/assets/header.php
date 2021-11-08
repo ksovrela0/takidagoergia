@@ -1,4 +1,4 @@
-<?
+<?php
 include("../db.php");
 $path = dirname(dirname(dirname(__FILE__)));
 ?>

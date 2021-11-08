@@ -1,4 +1,4 @@
-<?
+<?php
 $db = @mysql_connect("localhost","ks2","N12345678");
 mysql_select_db("paypal_test",$db);
 mysql_set_charset("utf8");

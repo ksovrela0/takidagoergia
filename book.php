@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 
 if(isset($_POST['trip']) and isset($_POST['name']) and isset($_POST['email']) and isset($_POST['phone']) and isset($_POST['number_person']))

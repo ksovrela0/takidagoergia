@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 //////////
 include("../db.php");
@@ -73,7 +73,7 @@ $(document).ready(function(){
     </div>
 ---!>
     <!-- BEGIN LOGIN FORM -->
-	<?
+	<?php
 	if(!isset($_SESSION['a_id']))
 	{
 		echo '<form action="index.php" class="form-vertical no-padding no-margin" id="loginform" method="POST" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>    <form id="loginform" class="form-vertical no-padding no-margin" action="index.php" method="POST">

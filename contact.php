@@ -35,12 +35,12 @@
     </script>
 </head>
 <body>
-<? include("social/soc.html"); ?>	
+<?php include("social/soc.html"); ?>	
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
 
-<?
+<?php
 include("blocks/header.php");
 ?>
 
@@ -124,7 +124,7 @@ include("blocks/header.php");
 
 
 
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 

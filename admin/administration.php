@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION[a_id]))
 {
@@ -64,7 +64,7 @@ include("../db.php");
 						<li class="">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="https://demo.betscheme.com/theme/Admin/img/user-avatar.png" alt="" />                                <span class="username">
-                                    <?
+                                    <?php
 									
 									echo $_SESSION['a_login']
 ?>									</span>
@@ -216,7 +216,7 @@ include("../db.php");
 									<a href="javascript:;" class="icon-chevron-down"></a>
 									</span>
                                 </div>
-								<?
+								<?php
 								$time = time();
 								$time = $time - 30;
 								$onlain = mysql_query("SELECT * FROM online WHERE time>$time");
@@ -228,15 +228,15 @@ include("../db.php");
                                     <table class="table table-striped">
                                         <tbody>
                                         <tr>
-                                            <td>Now users online: <? echo $row; ?></td>
-                                            <td><strong><? echo $UsersNum; ?></strong></td>
+                                            <td>Now users online: <?php echo $row; ?></td>
+                                            <td><strong><?php echo $UsersNum; ?></strong></td>
                                         </tr>
                                         <tr>
                                             <td>Logged users</td>
-                                            <td><strong><? echo $UsersNum; ?></strong></td>
+                                            <td><strong><?php echo $UsersNum; ?></strong></td>
                                         </tr>
                                         <tr>
-                                            <td>All Users: <? echo $AllUsersCount; ?></td>
+                                            <td>All Users: <?php echo $AllUsersCount; ?></td>
                                             <td><strong></strong></td>
                                         </tr>
                                         </tbody>

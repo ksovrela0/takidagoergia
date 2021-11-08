@@ -1,4 +1,4 @@
-﻿<?
+﻿<?php
 include("db.php");
 include("functions.php");
 ?>
@@ -111,7 +111,7 @@ include("functions.php");
  <td class="content">
  <!-- <body> --><div id="nativeroll_video_cont" style="display:none;"></div><div id="myGrid" style="display:none;"><div style="position:fixed;width:100%;text-align:center;padding-top:250px;"><img alt="" src=".s/img/ma/m/i3.gif" border="0" width="220" height="19" /></div></div><script type="text/javascript">function spages(p, link){if (1){document.location.href=link.href; return;}try{document.getElementById('myGrid').style.cssText = 'position:absolute; z-index:8; top:0;left:0; display:block; background:url(\'/.s/img/fr/g.gif\'); text-align:center; width:'+document.body.scrollWidth+'px; height:'+document.body.scrollHeight+'px;';}catch(e){}_uPostForm('',{url:''+atob('L2luZGV4Lw==')+'0-0-0-'+p+'-'+Math.floor(Math.random()*1e8)});}</script><div id="allEntries">
  
- <?
+ <?php
   $id = mysql_real_escape_string($_GET[id]);
  $NewsQuery = mysql_query("SELECT * FROM news WHERE id='$id'");
  $NewsRow = mysql_fetch_array($NewsQuery);

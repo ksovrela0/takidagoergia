@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 if(isset($_POST[txn_id]))
 {

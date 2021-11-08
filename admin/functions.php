@@ -1,4 +1,4 @@
-﻿<?
+﻿<?php
 function AddComment($id)
 {
 echo '

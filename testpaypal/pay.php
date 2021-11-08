@@ -1,4 +1,4 @@
-<?php
+<?phpphp
 
 if(isset($_REQUEST['name']) and isset($_REQUEST['amount']) and isset($_REQUEST['country']))
 {
@@ -26,16 +26,16 @@ $customData = array("username"=>$name,"country"=>$country);
 
 ?>
 <p>Please wait... redirecting to payment page......</p>
-<form action="<?php echo $payNowButtonUrl; ?>" method="post">
+<form action="<?phpphp echo $payNowButtonUrl; ?>" method="post">
     <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="<?php echo $receiverEmail; ?>">
+    <input type="hidden" name="business" value="<?phpphp echo $receiverEmail; ?>">
 	<input type="hidden" name="upload" value="1">
 	
     <input type="hidden" name="no_shipping" value="0">
-    <input type="hidden" name="return" value="<?php echo $returnUrl; ?>">
+    <input type="hidden" name="return" value="<?phpphp echo $returnUrl; ?>">
 
-    <input type="hidden" name="custom" value='<?php echo json_encode($customData);?>'>
-    <input type='hidden'name='amount' value="<?php echo $amount ?>">
+    <input type="hidden" name="custom" value='<?phpphp echo json_encode($customData);?>'>
+    <input type='hidden'name='amount' value="<?phpphp echo $amount ?>">
     <input type="hidden" name="currency_code" value="USD">
     <input type="hidden" name="lc" value="US">
     <input type="hidden" name="bn" value="PP-BuyNowBF">

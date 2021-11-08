@@ -1,4 +1,4 @@
-<?
+<?php
 $datetime = date('d/m/Y');
 require '../PHPMailer/PHPMailerAutoload.php';
 						$mail = new PHPMailer;

@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION[a_id]))
 {
@@ -83,7 +83,7 @@ $(document).ready(function(){
 						<li class="">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="https://demo.betscheme.com/theme/Admin/img/user-avatar.png" alt="" />                                <span class="username">
-                                    <? echo $_SESSION['a_login'] ?>                                </span>
+                                    <?php echo $_SESSION['a_login'] ?>                                </span>
 							</a>
 						</li>
 							<li class="">
@@ -195,7 +195,7 @@ $(document).ready(function(){
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
     <div id="page" class="dashboard">		
-<?
+<?php
 if(isset($_GET['edit']) and !empty($_GET['edit']))
 {
 $id = mysql_real_escape_string($_GET['edit']);
@@ -358,7 +358,7 @@ if(!isset($_GET['edit']) and !isset($_GET['del']) and !isset($_GET['add']) and !
                         </thead>
                         <tbody>';
 ?>
-                       <?
+                       <?php
 					   $Users = mysql_query("SELECT * FROM users ORDER BY id DESC");
 					   $UsersRow = mysql_fetch_array($Users);
 					   do
@@ -368,7 +368,7 @@ if(!isset($_GET['edit']) and !isset($_GET['del']) and !isset($_GET['add']) and !
 					   }
 					   while($UsersRow = mysql_fetch_array($Users));
 					   ?>
-						<?
+						<?php
 
 						
 						
@@ -488,7 +488,7 @@ if(!isset($_GET['edit']) and !isset($_GET['del']) and !isset($_GET['add']) and !
 			App.init();
 		});
 	</script>
-<?
+<?php
 if(isset($_GET['exit']))
 {
 	session_destroy();

@@ -1,4 +1,4 @@
-<?
+<?php
     include("db.php");
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
         <div class="mega_body">
             <div class="row background-fixer">
                 <h1>The most generous person<br> in the world is:</h1>
-                <?
+                <?php
                 $q = mysql_query("  SELECT ROUND(MAX(t.amount),2) AS 'amoun',t.user,t.country
                 FROM
                 (SELECT user,country, SUM(amount) as amount
@@ -338,7 +338,7 @@
                         <td>Amount</td>
                         <td>Country</td>
                     </tr>
-                    <?
+                    <?php
                     $query = mysql_query("  SELECT      ROUND(SUM(amount),2) AS 'amount',
                                                         user,
                                                         country

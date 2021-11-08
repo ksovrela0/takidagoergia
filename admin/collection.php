@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION[a_id]))
 {
@@ -83,7 +83,7 @@ $(document).ready(function(){
 						<li class="">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="https://demo.betscheme.com/theme/Admin/img/user-avatar.png" alt="" />                                <span class="username">
-                                    <? echo $_SESSION['a_login'] ?>                                </span>
+                                    <?php echo $_SESSION['a_login'] ?>                                </span>
 							</a>
 						</li>
 							<li class="">
@@ -193,7 +193,7 @@ $(document).ready(function(){
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
     <div id="page" class="dashboard">		
-<?
+<?php
 if(isset($_GET['del']) and !empty($_GET['del']))
 {
 $Users4 = mysql_query("SELECT * FROM collections WHERE id='".$_GET[del]."'");
@@ -473,7 +473,7 @@ echo '<div class="row-fluid ">
 			App.init();
 		});
 	</script>
-<?
+<?php
 if(isset($_GET['exit']))
 {
 	session_destroy();

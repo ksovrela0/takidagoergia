@@ -1,5 +1,5 @@
 
-<?php
+<?phpphp
 include("../db.php");
 $data = serialize($_POST);
 $get = mysql_query("SELECT * FROM article_background WHERE id='16'");
@@ -33,18 +33,18 @@ $returnUrl = 'https://georgiaholyland.com/paypal/suc.html';
 $customData = "['user_id' => $userId, 'product_id' => $productId]";
 ?>
 
-<form action="<?php echo $payNowButtonUrl; ?>" method="post">
+<form action="<?phpphp echo $payNowButtonUrl; ?>" method="post">
     <input type="hidden" name="cmd" value="_cart">
-    <input type="hidden" name="business" value="<?php echo $receiverEmail; ?>">
+    <input type="hidden" name="business" value="<?phpphp echo $receiverEmail; ?>">
 	<input type="hidden" name="upload" value="1">
-    <input id="paypalItemName" type="hidden" name="item_name_1" value="<?php echo $itemName; ?>">
-    <input id="paypalQuantity" type="hidden" name="quantity_1" value="<?php echo $quantity; ?>">
-    <input id="paypalAmmount" type="hidden" name="amount_1" value="<?php echo $amount; ?>">
+    <input id="paypalItemName" type="hidden" name="item_name_1" value="<?phpphp echo $itemName; ?>">
+    <input id="paypalQuantity" type="hidden" name="quantity_1" value="<?phpphp echo $quantity; ?>">
+    <input id="paypalAmmount" type="hidden" name="amount_1" value="<?phpphp echo $amount; ?>">
 	
     <input type="hidden" name="no_shipping" value="0">
-    <input type="hidden" name="return" value="<?php echo $returnUrl; ?>">
+    <input type="hidden" name="return" value="<?phpphp echo $returnUrl; ?>">
 
-    <input type="hidden" name="custom" value="<?php echo json_encode($customData);?>">
+    <input type="hidden" name="custom" value="<?phpphp echo json_encode($customData);?>">
 
     <input type="hidden" name="currency_code" value="USD">
     <input type="hidden" name="lc" value="US">

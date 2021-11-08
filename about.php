@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 ?>
 <!DOCTYPE html>
@@ -42,8 +42,8 @@ include("db.php");
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
 	<section class="page-img" style="background-image: url('assets/img/home_img/mountain.jpg');">
@@ -53,7 +53,7 @@ include("blocks/header.php");
 		</div>
 	</section>
 
-<?
+<?php
 if($_GET[id] == 1)
 {
 	echo '<div class="container">
@@ -70,7 +70,7 @@ if($_GET[id] == 1)
 	
 }
 	?>
-	<?
+	<?php
 	if($_GET[id] == 7)
 	{
 		echo '<section style="padding-bottom:0px; padding-top:40px">
@@ -105,7 +105,7 @@ if($_GET[id] == 1)
 		</section>';
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 6)
 	{
 		echo '<section style="padding-bottom:0px; padding-top:40px">
@@ -181,7 +181,7 @@ if($_GET[id] == 1)
 	</section>';
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 2)
 	{
 		echo '<section style="padding-bottom:0px; padding-top:40px">
@@ -277,7 +277,7 @@ if($_GET[id] == 1)
 		</section>';
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 3)
 	{
 		echo '<section style="padding-bottom:0px; padding-top:40px">
@@ -312,7 +312,7 @@ if($_GET[id] == 1)
 		</section>';
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 5)
 	{
 		echo '<section style="padding-bottom:0px; padding-top:40px">
@@ -347,7 +347,7 @@ if($_GET[id] == 1)
 		</section>';
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 4)
 	{
 		
@@ -1074,7 +1074,7 @@ if($_GET[id] == 1)
 						
 	}
 	?>
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 

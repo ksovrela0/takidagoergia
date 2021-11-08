@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 ?>
 <!DOCTYPE html>
@@ -42,13 +42,13 @@ include("db.php");
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
 	<section class="page-img" style="background-image: url('assets/img/home_img/mountain.jpg');">
 		<div class="main-title">
-			<h1><?
+			<h1><?php
 			if($_GET[id] == 1)
 			{
 				echo 'О Стране';
@@ -66,7 +66,7 @@ include("blocks/header.php");
 		</div>
 	</section>
 
-	<?
+	<?php
 	if($_GET[id] == 1)
 	{
 		echo '<div class="container">
@@ -83,7 +83,7 @@ include("blocks/header.php");
 		
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 2)
 	{
 		echo '<div class="container">
@@ -100,7 +100,7 @@ include("blocks/header.php");
 		
 	}
 	?>
-	<?
+	<?php
 	if($_GET[id] == 3)
 	{
 		echo '<div class="container">
@@ -118,7 +118,7 @@ include("blocks/header.php");
 	}
 	?>
 
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 

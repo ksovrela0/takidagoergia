@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 $GetInfo = mysql_query("SELECT * FROM about WHERE id='1'");
 $GetInfoR = mysql_fetch_array($GetInfo);

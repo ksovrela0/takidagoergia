@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 if(!isset($_SESSION[a_id]))
 {
@@ -19,7 +19,7 @@ include("../db.php");
 
 
 	<meta charset="utf-8" />
-    <title><?
+    <title><?php
 		if($_GET[id] == 1)
 		{
 			echo 'ტურების ';
@@ -83,7 +83,7 @@ include("../db.php");
 						<li class="">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                                <span class="username">
-                                    <? echo $_SESSION['a_login'] ?>                                </span>
+                                    <?php echo $_SESSION['a_login'] ?>                                </span>
 							</a>
 						</li>
 							<li class="">
@@ -122,7 +122,7 @@ include("../db.php");
     <!-- END RESPONSIVE QUICK SEARCH FORM -->
     <!-- BEGIN SIDEBAR MENU -->
 	
-    <?
+    <?php
 	include("assets/header.php");
 	?>
     <script type="text/javascript">
@@ -169,7 +169,7 @@ include("../db.php");
     <!-- END PAGE HEADER-->
     <!-- BEGIN PAGE CONTENT-->
     <div id="page" class="dashboard">		
-<?
+<?php
 if($_GET[id] == 1)	
 {
 	if(isset($_GET['del']) and !empty($_GET['del']) and !isset($_GET[comment_id]))
@@ -650,7 +650,7 @@ if($_GET[id] == 3)
 			App.init();
 		});
 	</script>
-<?
+<?php
 if(isset($_GET['exit']))
 {
 	session_destroy();

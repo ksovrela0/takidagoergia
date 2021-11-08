@@ -1,4 +1,4 @@
-<?
+<?php
 include("db.php");
 if(isset($_GET[id]))
 {
@@ -15,13 +15,13 @@ if(isset($_GET[id]))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title><? echo $GetTourR[name]; ?></title>
+    <title><?php echo $GetTourR[name]; ?></title>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
-<meta property="og:title" content="<? echo $GetTourR[name] ?>" />
-	<meta property="og:description" content="<? echo strip_tags($GetTourR[text]); ?>" />
+<meta property="og:title" content="<?php echo $GetTourR[name] ?>" />
+	<meta property="og:description" content="<?php echo strip_tags($GetTourR[text]); ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://takidageorgia.com/tour.php?id=<? echo $GetTourR[id]; ?>" />
-	<meta property="og:image" content="<? echo $GetTourR[main_pic]; ?>" />
+	<meta property="og:url" content="https://takidageorgia.com/tour.php?id=<?php echo $GetTourR[id]; ?>" />
+	<meta property="og:image" content="<?php echo $GetTourR[main_pic]; ?>" />
     <link rel="stylesheet" href="assets/css/min/bootstrap.min.css" media="all" >
     <link rel="stylesheet" href="assets/css/min/jqueryui.min.css" media="all" >
     <link rel="stylesheet" href="vendor/animate-css/animate.css" media="all" >
@@ -49,12 +49,12 @@ if(isset($_GET[id]))
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
 
-<?
+<?php
 		if(isset($_GET[id]))
 		{
 			
@@ -256,7 +256,7 @@ include("blocks/header.php");
 			<h3>Похожие Туры</h3>
 		</div>
 		<div class="row item">
-		<?
+		<?php
 			$GetST = mysql_query("SELECT * FROM tours ORDER BY RAND() LIMIT 3 ");
 			$GetSTR = mysql_fetch_array($GetST);
 			do
@@ -303,17 +303,17 @@ include("blocks/header.php");
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Бронирование Тура - <? echo $GetTourR[name]; ?></h4>
+					<h4 class="modal-title">Бронирование Тура - <?php echo $GetTourR[name]; ?></h4>
 				</div>
 				<div class="modal-body">
 
 					<div class="preview-wrap">
-						<div class="preview-img" style="background-image: url('<? echo $GetTourR[main_pic]; ?>')"></div>
+						<div class="preview-img" style="background-image: url('<?php echo $GetTourR[main_pic]; ?>')"></div>
 
 						<div class="form-wrap">
 							<form id="ajax-contact" method="post" action="https://takidageorgia.com/book.php">
 								<div id="form-messages" class="alert" role="alert" style="display: none;"></div>
-								<input type="hidden" name="trip" id="trip" value="<? echo $GetTourR[name]; ?>">
+								<input type="hidden" name="trip" id="trip" value="<?php echo $GetTourR[name]; ?>">
 								<div class="form-group">
 									<label>ФИО</label>
 									<input type="text" name="name" id="name" class="form-control" placeholder="" value="" required>
@@ -342,7 +342,7 @@ include("blocks/header.php");
 		</div>
 	</div>
 
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 

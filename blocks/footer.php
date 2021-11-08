@@ -1,19 +1,19 @@
-<?
+<?php
 include("db.php");
 ?>
 <footer id="footer" style="background: grey;">
 	<div class="container">
 		<div class="row">
-			<?
+			<?php
 			$GetInfo = mysql_query("SELECT * FROM about WHERE id='1'");
 			$GetInfoR = mysql_fetch_array($GetInfo);
 			?>
 			<div class="col-sm-5 col-md-2">
 				<h3>Контактная информация</h3>
 				<ul>
-					<li><? echo $GetInfoR[address]; ?></li>
-					<li><? echo $GetInfoR[mobile]; ?></li>
-					<li><? echo $GetInfoR[email]; ?></li>
+					<li><?php echo $GetInfoR[address]; ?></li>
+					<li><?php echo $GetInfoR[mobile]; ?></li>
+					<li><?php echo $GetInfoR[email]; ?></li>
 				</ul>
 				<div class="clearfix">
 					<div class="social-icon-list">

@@ -1,4 +1,4 @@
-<?
+<?php
 class DbAct
 {
 	private $host = 'localhost', $user = 'ks2', $pass = 'N12345678', $dbname = 'takida';

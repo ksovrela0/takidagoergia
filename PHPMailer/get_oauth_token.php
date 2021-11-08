@@ -1,4 +1,4 @@
-<?php
+<?phpphp
 /**
  * Get an OAuth2 token from Google.
  * * Install this script on your server so that it's accessible
