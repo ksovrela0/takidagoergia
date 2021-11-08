@@ -1,0 +1,11 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+FileETag none
+RewriteEngine On
+
+
+RewriteRule ^GREEN_CAT/news/([a-z0-9\-]+)/? GREEN_CAT/index.php?id=$1 [QSA,L]
+
+
+RewriteRule ^GREEN_CAT/page/([a-z0-9\-]+)/? GREEN_CAT/index.php?page=$1 [QSA,L]
+
