@@ -1,4 +1,4 @@
-<?php
+<?phpphp
 include("db.php");
 
 //EXPORT_DATABASE("localhost", "ks2", "N12345678", "takida" );
@@ -41,14 +41,14 @@ include("db.php");
 <div class="pre-loader">
   <div class="loading-img"></div>
 </div>
-<? include("social/soc.html"); ?>
-<?
+<?php include("social/soc.html"); ?>
+<?php
 include("blocks/header.php");
 ?>
 <!-- Start WOWSlider.com BODY section -->
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<?
+		<?php
 		$GetSlider = mysql_query("SELECT * FROM slider");
 		$GetSliderRow = mysql_fetch_array($GetSlider);
 		$i = 0;
@@ -62,7 +62,7 @@ include("blocks/header.php");
 		?>
 	</ul></div>
 	<div class="ws_bullets"><div>
-		<?
+		<?php
 		$GetSlider2 = mysql_query("SELECT * FROM slider");
 		$GetSliderRow2 = mysql_fetch_array($GetSlider2);
 		do
@@ -93,7 +93,7 @@ include("blocks/header.php");
 
 			<div class="row item">
 
-				<?
+				<?php
 				$GetTours = mysql_query("SELECT * FROM tours WHERE type='2' ORDER BY id DESC LIMIT 6");
 						$GetToursC = mysql_num_rows($GetTours);
 						if($GetToursC == 0)
@@ -191,7 +191,7 @@ include("blocks/header.php");
 
 			<div class="row item">
 
-				<?
+				<?php
 				$GetTours = mysql_query("SELECT * FROM tours WHERE type='3' ORDER BY id DESC LIMIT 6");
 						$GetToursC = mysql_num_rows($GetTours);
 						if($GetToursC == 0)
@@ -287,7 +287,7 @@ include("blocks/header.php");
 
 			<div class="row item">
 
-				<?
+				<?php
 				$GetTours = mysql_query("SELECT * FROM tours WHERE type='11' ORDER BY id DESC LIMIT 6");
 						$GetToursC = mysql_num_rows($GetTours);
 						if($GetToursC == 0)
@@ -381,7 +381,7 @@ include("blocks/header.php");
   <h3>Наши Сотрудники</h3>
 </div>
 <div class="row team">
-		<?
+		<?php
 		$GetGuids = mysql_query("SELECT * FROM guids ORDER BY id DESC");
 		$GetGuidsR = mysql_fetch_array($GetGuids);
 		do
@@ -415,7 +415,7 @@ include("blocks/header.php");
 
 
 
-	<?
+	<?php
 	include("blocks/footer.php");
 	?>
 
